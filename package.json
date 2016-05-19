@@ -1,0 +1,23 @@
+{
+  "name": "okonmarket",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Оконный Маркет",
+  "author": "Маргарита Мунтанион",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Ennitta/okonmarket.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Ennitta/okonmarket/issues"
+  },
+  "homepage": "https://github.com/Ennitta/okonmarket",
+  "devDependencies": {},
+  "scripts": {
+    "build": "gulp style",
+    "start": "gulp serve"
+  },
+  "engines": {
+    "node": "^5.0.0"
+  }
+}
