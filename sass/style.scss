@@ -1,1 +1,15 @@
-body { background: blue; }
+@import "global/fonts";
+@import "lib/normalize";
+@import "variables";
+@import "mixins";
+@import "global/base";
+
+//blocks
+@import "catalog";
+@import "main-content";
+@import "main-nav";
+@import "map";
+@import "page-footer";
+@import "page-header";
+@import "slider";
+@import "social-links";
