@@ -1,0 +1,17 @@
+@media #{$desctop-width} {
+  .page-header {
+    position: relative;
+
+    &__logo {
+      width: 169px;
+      height: 119px;
+      margin: 30px auto;
+
+      img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+@media #{$desctop-width} {
+  .main-nav {
+    display: flex;
+    flex-direction: row;
+    @include list-clear;
+    justify-content: space-between;
+
+    &__item {
+      width: 17%;
+      padding-right: 2%;
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}
