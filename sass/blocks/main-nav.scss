@@ -6,10 +6,28 @@
     justify-content: space-between;
 
     &__item {
-      width: 17%;
-      padding-right: 2%;
+      width: 13%;
+      padding: 5px;
+      margin-right: 1%;
+      background-image: linear-gradient(to bottom, #a5cd49, #71b02f);
+      border-radius: 5px;
+      text-align: center;
+
       a {
+        padding: 10px;
         text-decoration: none;
+        color: #ffffff;
+        font-weight: 700;
+      }
+
+      &--search {
+        text-align: left;
+        width: 20%;
+        padding: 0;
+      }
+
+      &--tel {
+        width: 20%;
       }
     }
   }
