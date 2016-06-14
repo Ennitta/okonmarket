@@ -1,6 +1,10 @@
+.page-header {
+  &__logo {
+    width: 100px;
+  }
+}
 @media #{$desctop-width} {
   .page-header {
-    position: relative;
 
     &__logo {
       width: 169px;

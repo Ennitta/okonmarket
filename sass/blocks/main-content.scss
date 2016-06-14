@@ -1,0 +1,10 @@
+@media #{$desctop-width} {
+  .main-content {
+    &__title {
+      font-size: 35px;
+      line-height: 30px;
+      color: #8abe3b;
+      text-align: center;
+    }
+  }
+}
