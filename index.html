@@ -13,13 +13,15 @@
         <li class="main-nav__item"><a href="#">Рассчитать заказ</a></li>
         <li class="main-nav__item"><a href="#">Контакты</a></li>
         <li class="main-nav__item"><a href="#">Скачать прайс</a></li>
+        <li class="main-nav__item main-nav__item--tel">Телефон 8 (4912) 512-619</li>
         <li class="main-nav__item main-nav__item--search">
           <input type="search" name="search" placeholder="Поиск">
         </li>
-        <li class="main-nav__item main-nav__item--tel">Телефон 8 (4912) 512-619</li>
       </ul>
       <div class="page-header__logo">
-        <img src="img/Logo-3.png" width="169" height="119" alt="">
+        <picture>
+          <img src="img/Logo-3.png" width="150" height="80" alt="Оконный Маркет">
+        </picture>
       </div>
     </header>
     <main class="main-content">
@@ -31,11 +33,17 @@
           <label for="btn-1"></label>
           <label for="btn-2"></label>
         </div>-->
-        <div class="sliders__img">
-          <img src="img/skider1.jpg" alt="">
+        <div class="sliders__images">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/slider1.jpg">
+            <img src="img/slider1-modile.jpg" width="320" height="160" alt="">
+          </picture>
         </div>
-        <div class="sliders__img">
-          <img src="img/Slider2.jpg" alt="">
+        <div class="sliders__images">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/slider1.jpg">
+            <img src="img/slider1-modile.jpg" width="320" height="160" alt="">
+          </picture>
         </div>
       </div>
       <div class="main-content__text">
@@ -44,9 +52,9 @@
         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
       </div>
       <div class="map">
-        <img src="#" alt="">
+        <img src="#" width="320" height="280" alt="">
       </div>
-    </main>
+    </main><!--
     <footer class="page-footer">
       <div class="page-footer__contacts">All rights reserved 2016</div>
       <div class="social-links">
@@ -55,6 +63,6 @@
         <a href="#" class="social-links__common"></a>
       </div>
       <div class="page-footer__copyright">Разработано</div>
-    </footer>
+    </footer>-->
   </body>
 </html>

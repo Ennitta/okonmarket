@@ -1,6 +1,19 @@
 .page-header {
   &__logo {
-    width: 100px;
+    width: 150px;
+    margin: 20px auto;
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+}
+
+@media #{$tablet-width} {
+  .page-header {
+    @include container-fluid;
   }
 }
 @media #{$desctop-width} {
@@ -10,12 +23,6 @@
       width: 169px;
       height: 119px;
       margin: 30px auto;
-
-      img {
-        max-width: 100%;
-        height: auto;
-        display: block;
-      }
     }
   }
 }

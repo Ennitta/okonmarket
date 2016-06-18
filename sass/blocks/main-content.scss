@@ -1,10 +1,20 @@
+.main-content {
+  @include container-fluid;
+  margin: 5px 20px;
+
+  &__title {
+    font-size: 25px;
+    line-height: 35px;
+    color: #8abe3b;
+    text-align: center;
+  }
+}
+
 @media #{$desctop-width} {
   .main-content {
     &__title {
       font-size: 35px;
       line-height: 30px;
-      color: #8abe3b;
-      text-align: center;
     }
   }
 }
