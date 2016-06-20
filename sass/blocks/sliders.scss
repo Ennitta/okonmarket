@@ -1,5 +1,40 @@
 .sliders {
+  position: relative;
+
+  input {
+    display: none;
+  }
+
+  label {
+    position:absolute;
+    top: 43%;
+    width: 25px;
+    height: 30px;
+    border: 1px solid black;
+    background-color: red;
+    opacity: 0.3;
+  }
+
+  label [for="btn-1"] {
+    left: 0;
+  }
+
+  label [for="btn-1"]:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 15px;
+    height: 15px;
+    background: black;
+  }
+
+  label[for="btn-2"] {
+    right: 0;
+  }
+
   &__images {
+    display: none;
 
     img {
       width: 100%;
@@ -8,3 +43,10 @@
     }
   }
 }
+
+#btn-1:checked ~ .sliders__images--one {
+    display: block;
+  }
+#btn-2:checked ~ .sliders__images--two {
+    display: block;
+  }

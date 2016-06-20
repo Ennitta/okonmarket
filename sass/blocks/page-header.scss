@@ -13,7 +13,16 @@
 
 @media #{$tablet-width} {
   .page-header {
+    position: relative;
     @include container-fluid;
+
+    &__logo {
+      position: absolute;
+      top: -130px;
+      left: 50%;
+      transform: translateX(-50%);
+      margin: 0;
+    }
   }
 }
 @media #{$desctop-width} {
@@ -22,7 +31,6 @@
     &__logo {
       width: 169px;
       height: 119px;
-      margin: 30px auto;
     }
   }
 }
