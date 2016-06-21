@@ -12,7 +12,7 @@
         <li class="main-nav__item"><a href="#">Каталог</a></li>
         <li class="main-nav__item"><a href="#">Рассчитать заказ</a></li>
         <li class="main-nav__item"><a href="#">Контакты</a></li>
-        <li class="main-nav__item"><a href="#">Скачать прайс</a></li>
+        <li class="main-nav__item main-nav__item--price">Скачать прайс</li>
         <li class="main-nav__item main-nav__item--tel">Телефон 8 (4912) 512-619</li>
         <li class="main-nav__item main-nav__item--search">
           <input type="search" name="search" placeholder="Поиск">
@@ -50,17 +50,23 @@
         <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.</p>
       </div>
       <div class="map">
-        <img src="#" width="320" height="280" alt="">
+        <picture>
+          <source media="(min-width: 890px)" srcset="img/map.jpg">
+          <img src="img/map-mobile.jpg" width="320" height="280" alt="">
+        </picture>
       </div>
-    </main><!--
+    </main>
     <footer class="page-footer">
-      <div class="page-footer__contacts">All rights reserved 2016</div>
-      <div class="social-links">
-        <a href="#" class="social-links__common"></a>
-        <a href="#" class="social-links__common"></a>
-        <a href="#" class="social-links__common"></a>
+      <div class="page-footer__wrapper">
+        <div class="page-footer__contacts">г. Рязань, проезд Шабулина, 6б</div>
+        <!--
+        <div class="social-links">
+          <a href="#" class="social-links__common"></a>
+          <a href="#" class="social-links__common"></a>
+          <a href="#" class="social-links__common"></a>
+        </div>-->
+        <div class="page-footer__copyright">Разработано 2016г.</div>
       </div>
-      <div class="page-footer__copyright">Разработано</div>
-    </footer>-->
+    </footer>
   </body>
 </html>

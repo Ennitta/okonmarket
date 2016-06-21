@@ -9,6 +9,19 @@
     color: #8abe3b;
     text-align: center;
   }
+
+  &__text {
+    margin: 20px 0;
+    padding: 0 20px;
+    padding-bottom: 15px;
+    color: #8abe3b;
+    background-color: #ffffff;
+
+    p {
+      margin: 0;
+      padding-top: 10px;
+    }
+  }
 }
 
 @media #{$desctop-width} {
