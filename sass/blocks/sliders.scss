@@ -8,29 +8,34 @@
   label {
     position:absolute;
     top: 43%;
-    width: 25px;
-    height: 30px;
-    border: 1px solid black;
-    background-color: red;
-    opacity: 0.3;
+    width: 26px;
+    height: 31px;
+    background-color: rgba(165,205,73,0.6);
+  }
+
+  label:after {
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 7px;
+    width: 10px;
+    height: 23px;
   }
 
   label [for="btn-1"] {
     left: 0;
   }
 
-  label [for="btn-1"]:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 15px;
-    height: 15px;
-    background: black;
+  label[for="btn-1"]:after {
+    background: url(../../img/slider-arrow-left.png) no-repeat center center;
   }
 
   label[for="btn-2"] {
     right: 0;
+  }
+
+  label[for="btn-2"]:after {
+    background: url(../../img/slider-arrow-right.png) no-repeat center center;
   }
 
   &__images {
@@ -50,3 +55,25 @@
 #btn-2:checked ~ .sliders__images--two {
     display: block;
   }
+
+@media #{$desctop-width} {
+  .sliders {
+
+    label {
+      width: 35px;
+      height: 37px;
+    }
+
+    label:after {
+      top: 7px;
+    }
+
+    label[for="btn-1"]:after {
+      left: 11px;
+    }
+
+    label[for="btn-2"]:after {
+      left: 14px;
+    }
+  }
+}
