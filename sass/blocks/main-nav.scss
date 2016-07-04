@@ -58,8 +58,10 @@
       }
 
       &--price {
+        width: 15%;
         line-height: 34px;
         text-align: left;
+        padding-left: 10px;
       }
 
       &--search {
@@ -109,6 +111,11 @@
 
       a {
         line-height: 36px;
+      }
+
+      &--price {
+        width: 17%;
+        padding-left: 10px;
       }
 
       &--search {
