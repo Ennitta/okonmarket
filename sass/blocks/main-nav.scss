@@ -18,6 +18,7 @@
 
       &--price {
         color: #ffffff;
+        cursor: pointer;
       }
 
       &--search {
@@ -58,10 +59,22 @@
       }
 
       &--price {
+        position: relative;
         width: 15%;
         line-height: 34px;
         text-align: left;
-        padding-left: 10px;
+        padding-left: 1%;
+      }
+
+      &--price:after {
+        content: "";
+        position: absolute;
+        top: 2px;
+        left: 76%;
+        width: 22px;
+        height: 30px;
+        background: url(../../img/print.png) no-repeat center center;
+        background-size: 22px 18px;
       }
 
       &--search {
@@ -92,6 +105,7 @@
         background: url(../../img/search.svg) no-repeat center center;
         background-size: 17px 20px;
         z-index: 100;
+        cursor: pointer;
         }
 
       &--tel {
@@ -115,7 +129,12 @@
 
       &--price {
         width: 17%;
-        padding-left: 10px;
+        padding-left: 1%;
+      }
+
+      &--price:after {
+        top: 3px;
+        left: 81%;
       }
 
       &--search {
