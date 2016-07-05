@@ -8,39 +8,44 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="page-header__logo">
-        <img src="#" alt="">
-      </div>
-      <ul class="main-nan">
-        <li><a href="#">Каталог</a></li>
-        <li><a href="#">Рассчитать заказ</a></li>
-        <li><a href="#">Контакты</a></li>
-        <li><a href="#">Скачать прайс</a></li>
+      <ul class="main-nav">
+        <li class="main-nav__item"><a href="catalog.html">Каталог</a></li>
+        <li class="main-nav__item"><a href="#">Рассчитать заказ</a></li>
+        <li class="main-nav__item"><a href="#">Контакты</a></li>
+        <li class="main-nav__item main-nav__item--price">Скачать прайс</li>
+        <li class="main-nav__item main-nav__item--tel">Телефон 8 (4912) 512-619</li>
+        <li class="main-nav__item main-nav__item--search">
+          <input type="search" name="search" placeholder="Поиск">
+        </li>
       </ul>
-      <input type="search" name="search" placeholder="Поиск">
-      <div class="page-header__tel">8 (4912) 512-619</div>
+      <a href="index.html" class="page-header__logo">
+        <picture>
+          <img src="img/Logo-3.png" width="150" height="80" alt="Оконный Маркет">
+        </picture>
+      </a>
     </header>
     <main class="catalog">
-      <ul>
-        <li>Подоконники</li>
-        <li>Сендвич-панели</li>
-        <li>Водоотливы, мет. нащельник, козырьки</li>
-        <li>Москитные сетки</li>
-        <li>Нащельники ПВХ, угол ПВХ</li>
-        <li>Пена монтажная</li>
-        <li>ПСУЛ</li>
-        <li>Шурупы по бетону, рамные анкера, саморезы</li>
-        <li>Расходные материалы</li>
-      </ul>
+      <h1 class="catalog__title">Каталог товаров</h1>
+      <div class="catalog__list">
+        <div class="catalog__item">
+          <picture class="catalog__images">
+            <img src="img/metall.jpg" width="160" height="140" alt="">
+          </picture>
+          <div class="catalog__discription">Подоконники "Cristallit" и "Elex"</div>
+        </div>
+      </div>
     </main>
     <footer class="page-footer">
-      <div class="page-footer__contacts">All rights reserved 2016</div>
-      <div class="social-links">
-        <a href="#" class="social-links__common"></a>
-        <a href="#" class="social-links__common"></a>
-        <a href="#" class="social-links__common"></a>
+      <div class="page-footer__wrapper">
+        <div class="page-footer__contacts">г. Рязань, проезд Шабулина, 6б</div>
+        <!--
+        <div class="social-links">
+          <a href="#" class="social-links__common"></a>
+          <a href="#" class="social-links__common"></a>
+          <a href="#" class="social-links__common"></a>
+        </div>-->
+        <div class="page-footer__copyright">Разработано 2016г.</div>
       </div>
-      <div class="page-footer__copyright">Разработано</div>
     </footer>
   </body>
 </html>

@@ -1,0 +1,42 @@
+.catalog {
+  @include container-fluid;
+  margin: 5px 20px;
+
+  &__title {
+    @include main-title;
+    margin-bottom: 20px;
+  }
+
+  &__list {
+
+  }
+
+  &__item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 18px;
+    line-height: 20px;
+  }
+
+  &__images {
+    width: 65%;
+    margin-right: 2%;
+    outline: 2px solid #8abe3b;
+    background-color: #ffffff;
+
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+  }
+
+  &__discription {
+    width: 38%;
+    margin: auto;
+    text-align: center;
+    color: #8abe3b;
+    text-shadow: 2px 2px 3px #8abe3b;
+  }
+}

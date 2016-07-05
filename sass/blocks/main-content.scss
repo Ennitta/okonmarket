@@ -3,11 +3,8 @@
   margin: 5px 20px;
 
   &__title {
-    font-size: 25px;
-    line-height: 35px;
+    @include main-title;
     margin-bottom: 20px;
-    color: #8abe3b;
-    text-align: center;
   }
 
   &__text {
@@ -28,7 +25,7 @@
   .main-content {
     &__title {
       font-size: 35px;
-      line-height: 30px;
+      line-height: 35px;
       margin-top: 30px;
       margin-bottom: 30px;
     }
