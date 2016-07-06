@@ -12,18 +12,18 @@
   }
 
   &__item{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    font-size: 18px;
-    line-height: 20px;
+    width: 80%;
+    margin: auto;
+    /*display: flex;
+    flex-direction: column;
+    align-items: center;*/
   }
 
   &__images {
-    width: 65%;
+    /*width: 65%;
     margin-right: 2%;
     outline: 2px solid #8abe3b;
-    background-color: #ffffff;
+    background-color: #ffffff;*/
 
     img {
       width: 100%;
@@ -33,10 +33,10 @@
   }
 
   &__discription {
-    width: 38%;
-    margin: auto;
+    background-color: #8abe3b;
+    color: #ffffff;
     text-align: center;
-    color: #8abe3b;
-    text-shadow: 2px 2px 3px #8abe3b;
+    font-size: 18px;
+    line-height: 30px;
   }
 }
