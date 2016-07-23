@@ -14,16 +14,10 @@
   &__item{
     width: 80%;
     margin: auto;
-    /*display: flex;
-    flex-direction: column;
-    align-items: center;*/
+    margin-bottom: 30px;
   }
 
   &__images {
-    /*width: 65%;
-    margin-right: 2%;
-    outline: 2px solid #8abe3b;
-    background-color: #ffffff;*/
 
     img {
       width: 100%;
@@ -37,6 +31,23 @@
     color: #ffffff;
     text-align: center;
     font-size: 18px;
-    line-height: 30px;
+    line-height: 40px;
+  }
+}
+@media #{$tablet-width} {
+  .catalog {
+
+    &__list {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    &__item {
+      width: 31%;
+      margin: 0;
+      margin-bottom: 35px;
+    }
   }
 }
