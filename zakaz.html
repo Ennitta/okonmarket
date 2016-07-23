@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Рассчитать заказ</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <header class="page-header">
+      <ul class="main-nav">
+        <li class="main-nav__item"><a href="catalog.html">Каталог</a></li>
+        <li class="main-nav__item"><a>Рассчитать заказ</a></li>
+        <li class="main-nav__item"><a href="#">Контакты</a></li>
+        <li class="main-nav__item main-nav__item--price">Скачать прайс</li>
+        <li class="main-nav__item main-nav__item--tel">Телефон 8 (4912) 512-619</li>
+        <li class="main-nav__item main-nav__item--search">
+          <input type="search" name="search" placeholder="Поиск">
+        </li>
+      </ul>
+      <a href="index.html" class="page-header__logo">
+        <picture>
+          <img src="img/Logo-3.png" width="150" height="80" alt="Оконный Маркет">
+        </picture>
+      </a>
+  </header>
+  <div class="count">
+    <div class="count__item">
+      <div class="count__title">Подоконник (белый матовый)</div>
+      <div class="count__calculate">
+        <select name="width">
+          <option>Выберите ширину</option>
+          <option value="100">100</option>
+          <option value="150">150</option>
+          <option value="200">200</option>
+          <option value="250">250</option>
+          <option value="300">300</option>
+          <option value="350">350</option>
+          <option value="400">400</option>
+          <option value="450">450</option>
+          <option value="500">500</option>
+          <option value="550">550</option>
+          <option value="600">600</option>
+        </select>
+        <span>мм</span> x <input type="number" name="lenght" placeholder="Укажите длину">
+        <span>мм</span> x <input type="number" name="price" placeholder="цена">
+        <span> р. </span><span> = </span>
+        <input type="number" name="sum" placeholder="сумма"><span> р. </span>
+      </div>
+    </div>
+    <div class="count__item">
+      <div class="count__title">Сендвич-панель (откос)</div>
+      <div class="count__calculate">
+        <input type="number" name="width" placeholder="Укажите ширину"><span>мм</span> x
+        <input type="number" name="length" placeholder="Укажите длину"><span>мм</span> x
+        <span>310 р.</span><span> = </span>
+        <input type="number" name="sum" placeholder="сумма">
+      </div>
+    </div>
+    <div class="count__item">
+      <div class="count__title">Металл белый(коричн.) 0,45 мм</div>
+      <div class="count__calculate">
+        <input type="number" name="width" placeholder="Укажите ширину"><span>мм</span> x
+        <input type="number" name="length" placeholder="Укажите длину"><span>мм</span> x
+        <span>450 р.</span><span> = </span>
+        <input type="number" name="sum" placeholder="сумма">
+      </div>
+      <div class="total">Итого:</div>
+      <input type="namber" name="total"><span> р. </span>
+    </div>
+  </div>
+  </body>
+</html>
