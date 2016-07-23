@@ -1,0 +1,24 @@
+.contacts {
+  @include container-fluid;
+  font-size: 20px;
+
+  &__title {
+    @include main-title;
+  }
+
+  &__list {
+    display: block;
+    @include list-clear;
+  }
+
+  &__item {
+    margin: 0 auto;
+    span {
+      font-weight: 700;
+    }
+  }
+
+  &__item-time {
+    width: 25%;
+  }
+}
