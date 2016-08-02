@@ -1,24 +1,40 @@
 .contacts {
   @include container-fluid;
   font-size: 20px;
+  margin: 0 20px;
+  margin-bottom: 20px;
 
   &__title {
     @include main-title;
   }
 
   &__list {
-    display: block;
     @include list-clear;
+    text-align: center;
   }
 
   &__item {
-    margin: 0 auto;
+    line-height: 24px;
+    margin-bottom: 10px;
+
     span {
       font-weight: 700;
     }
   }
 
-  &__item-time {
-    width: 25%;
+  &__work-time {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__work {
+    font-weight: 700;
+    line-height: 28px;
+    margin-bottom: 10px;
+  }
+
+  &__time {
+    line-height: 28px;
   }
 }
