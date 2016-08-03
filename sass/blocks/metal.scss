@@ -1,0 +1,47 @@
+.metal {
+  @include container-fluid;
+  margin: 20px;
+  font-size: 16px;
+  line-height: 25px;
+
+  &__title {
+    @include main-title;
+  }
+
+  &__wrapper {
+    margin-bottom: 10px;
+  }
+
+  &__images {
+
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border: 2px solid #8abe3b;
+      border-radius: 10px;
+    }
+  }
+
+  &__discription {
+    text-align: center;
+  }
+}
+@media #{$tablet-width} {
+  .metal {
+
+    &__container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &__wrapper {
+      width: 23%;
+    }
+  }
+}
+@media #{$desctop-width} {
+  .metal {
+    margin-bottom: 20px;
+  }
+}

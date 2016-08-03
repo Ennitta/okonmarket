@@ -23,18 +23,39 @@
   }
 
   &__work-time {
-    width: 80%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
   }
 
   &__work {
     font-weight: 700;
     line-height: 28px;
     margin-bottom: 10px;
+    margin-right: 10px;
   }
 
   &__time {
     line-height: 28px;
+  }
+}
+
+@media #{$tablet-width} {
+  .contacts {
+    margin-bottom: 10px;
+
+    &__wrapper {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    &__list {
+      text-align: left;
+    }
+  }
+}
+
+@media #{$desctop-width} {
+  .contacts {
+    font-size: 23px;
   }
 }

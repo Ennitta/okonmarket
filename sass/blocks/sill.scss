@@ -1,0 +1,33 @@
+.sill {
+  @include container-fluid;
+  margin: 5px 20px;
+
+  &__table {
+    display: table;
+  }
+
+  &__title {
+    display: table-caption;
+  }
+
+  &__header {
+    display: table-header-group;
+  }
+
+  &__row {
+    @include list-clear;
+    display: table-row;
+  }
+
+  &__cell {
+    display: table-cell;
+  }
+
+  &__container {
+    display: table-row-group;
+  }
+
+  &__column {
+    display: table-column;
+  }
+}

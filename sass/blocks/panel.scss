@@ -1,0 +1,65 @@
+.panel {
+  @include container-fluid;
+  margin: 0 20px;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+
+  &__title {
+    @include main-title;
+  }
+
+  &__wrapper {
+    margin-bottom: 15px;
+  }
+
+  &__images {
+
+    img {
+      width: 100%;
+      height: auto;
+      display: block;
+      border: 2px solid #8abe3b;
+      border-radius: 10px;
+    }
+  }
+
+  &__discription {
+    margin-top: 10px;
+  }
+}
+@media #{$tablet-width} {
+  .panel {
+
+    &__wrapper {
+      display: flex;
+    }
+
+    &__images {
+      width: 50%;
+    }
+
+    &__discription {
+      width: 44%;
+      margin-left: 3%;
+      margin-right: 3%;
+      align-self: center;
+    }
+  }
+}
+@media #{$desctop-width} {
+  .panel {
+
+    &__wrapper {
+      width: 73%;
+    }
+
+    &__images {
+      width: 41%;
+    }
+
+    &__discription {
+      width: 53%;
+    }
+  }
+}

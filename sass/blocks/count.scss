@@ -1,7 +1,3 @@
 .count {
-  margin: 0 10%;
-
-  input {
-    width: 30%;
-  }
+  @include container-fluid;
 }
