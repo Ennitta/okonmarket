@@ -27,7 +27,7 @@
   }
 
   label[for="btn-1"]:after {
-    background: url(../../img/slider-arrow-left.png) no-repeat center center;
+    background: url(../img/slider-arrow-left.png) no-repeat center center;
   }
 
   label[for="btn-2"] {
@@ -35,16 +35,14 @@
   }
 
   label[for="btn-2"]:after {
-    background: url(../../img/slider-arrow-right.png) no-repeat center center;
+    background: url(../img/slider-arrow-right.png) no-repeat center center;
   }
 
   &__images {
     display: none;
 
     img {
-      width: 100%;
-      height: auto;
-      display: block;
+      @include block-img;
     }
   }
 }

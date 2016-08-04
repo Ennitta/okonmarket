@@ -19,6 +19,12 @@
   color: #8abe3b;
   text-align: center;
 }
+//картинки
+@mixin block-img() {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 
 //
 @mixin container-fluid () {
