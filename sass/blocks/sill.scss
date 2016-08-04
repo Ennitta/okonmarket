@@ -2,32 +2,43 @@
   @include container-fluid;
   margin: 5px 20px;
 
-  &__table {
-    display: table;
+  &__wrapper {
+    margin-bottom: 20px;
   }
 
-  &__title {
-    display: table-caption;
+  &__images {
+
+    img {
+      min-height: 150px;
+      @include block-img;
+      @include border-radius;
+    }
   }
 
-  &__header {
-    display: table-header-group;
+  &__discription {
+    margin-top: 10px;
   }
+}
+@media #{$tablet-width} {
+  .sill {
 
-  &__row {
-    @include list-clear;
-    display: table-row;
+    &__wrapper {
+      display: flex;
+    }
+
+    &__images {
+      width: 50%;
+    }
+
+    &__discription {
+      width: 44%;
+      margin-left: 3%;
+      margin-right: 3%;
+      align-self: center;
+    }
   }
-
-  &__cell {
-    display: table-cell;
-  }
-
-  &__container {
-    display: table-row-group;
-  }
-
-  &__column {
-    display: table-column;
+}
+@media #{$desctop-width} {
+  .sill {
   }
 }

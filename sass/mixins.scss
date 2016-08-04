@@ -12,18 +12,16 @@
   padding: 0;
   list-style-type: none;
 }
-// главный заголовок
-@mixin main-title () {
-  font-size: 25px;
-  line-height: 35px;
-  color: #8abe3b;
-  text-align: center;
-}
 //картинки
 @mixin block-img() {
   width: 100%;
   height: auto;
   display: block;
+}
+//обводка картинок
+@mixin border-radius {
+  border: 2px solid #8abe3b;
+  border-radius: 10px;
 }
 
 //

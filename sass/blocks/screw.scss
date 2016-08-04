@@ -1,12 +1,9 @@
-.panel {
+.screw {
   @include container-fluid;
-  margin: 0 20px;
-  font-size: 16px;
-  line-height: 24px;
-  text-align: center;
+  margin: 20px;
 
-  &__wrapper {
-    margin-bottom: 15px;
+  &__item {
+    margin-bottom: 20px;
   }
 
   &__images {
@@ -19,40 +16,46 @@
 
   &__discription {
     margin-top: 10px;
+    font-weight: 700;
+    text-align: center;
   }
 }
 @media #{$tablet-width} {
-  .panel {
+  .screw {
 
-    &__wrapper {
-      display: flex;
+    &__item {
+    display: flex;
     }
 
     &__images {
       width: 50%;
+
+      img {
+        max-height: 220px;
+      }
     }
 
     &__discription {
-      width: 44%;
-      margin-left: 3%;
-      margin-right: 3%;
+      width: 48%;
+      margin-left: 2%;
+      margin-top: 0;
       align-self: center;
+      line-height: 26px;
     }
   }
 }
 @media #{$desctop-width} {
-  .panel {
-
-    &__wrapper {
-      width: 73%;
-    }
+  .screw {
 
     &__images {
-      width: 41%;
+
+      img {
+        max-height: 260px;
+      }
     }
 
     &__discription {
-      width: 53%;
+      line-height: 30px;
     }
   }
 }

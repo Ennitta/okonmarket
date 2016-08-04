@@ -1,0 +1,16 @@
+.mesh {
+  @include container-fluid;
+  margin: 5px 20px;
+
+  &__item {
+    margin-bottom: 20px;
+  }
+
+    &__images {
+
+    img {
+      @include block-img;
+      @include border-radius;
+    }
+  }
+}

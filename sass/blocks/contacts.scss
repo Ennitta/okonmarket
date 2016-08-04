@@ -4,10 +4,6 @@
   margin: 0 20px;
   margin-bottom: 20px;
 
-  &__title {
-    @include main-title;
-  }
-
   &__list {
     @include list-clear;
     text-align: center;
