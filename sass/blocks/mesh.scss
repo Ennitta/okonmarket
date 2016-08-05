@@ -13,4 +13,40 @@
       @include border-radius;
     }
   }
+  &__discription {
+    margin-top: 10px;
+    text-align: center;
+  }
+}
+@media #{$tablet-width} {
+  .mesh {
+
+    &__wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    &__item {
+      width: 32%;
+    }
+
+    &__images {
+
+      img {
+        max-height: 140px;
+      }
+    }
+  }
+}
+@media #{$desctop-width} {
+  .mesh {
+
+    &__images {
+
+      img {
+        max-height: 220px;
+      }
+    }
+  }
 }
