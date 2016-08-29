@@ -1,0 +1,39 @@
+.materials {
+  @include container-fluid;
+  margin: 5px 20px;
+
+  &__item {
+    width: 70%;
+    margin: 20px auto;
+    margin-top: 0;
+  }
+
+    &__images {
+
+    img {
+      @include block-img;
+      @include border-radius;
+    }
+  }
+
+  &__discription {
+    margin-top: 10px;
+    text-align: center;
+  }
+}
+@media #{$tablet-width} {
+  .materials {
+
+    &__wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    &__item {
+      width: 31%;
+      margin: 0;
+      margin-bottom: 30px;
+    }
+  }
+}
