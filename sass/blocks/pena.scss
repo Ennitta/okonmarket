@@ -1,0 +1,41 @@
+.pena {
+  @include container-fluid;
+  margin: 5px 40px;
+
+  &__item {
+    margin-bottom: 20px;
+  }
+
+  &__images {
+
+    img {
+      width: 60%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+      @include border-radius;
+    }
+  }
+
+  &__discription {
+    margin-top: 10px;
+    text-align: center;
+  }
+}
+@media #{$tablet-width} {
+  .pena {
+
+    &__wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
+    &__images {
+
+      img {
+        width: 95%;
+      }
+    }
+  }
+}
