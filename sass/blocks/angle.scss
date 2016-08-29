@@ -1,12 +1,12 @@
-.mesh {
+.angle {
   @include container-fluid;
-  margin: 5px 20px;
+  margin: 5px 40px;
 
   &__item {
     margin-bottom: 20px;
   }
 
-    &__images {
+  &__images {
 
     img {
       @include block-img;
@@ -20,34 +20,26 @@
   }
 }
 @media #{$tablet-width} {
-  .mesh {
-
-    &__wrapper {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-    }
+  .angle {
 
     &__item {
-      width: 32%;
+      display: flex;
     }
 
     &__images {
+      width: 50%;
 
       img {
-        max-height: 140px;
+        max-height: 300px;
       }
     }
-  }
-}
-@media #{$desctop-width} {
-  .mesh {
 
-    &__images {
-
-      img {
-        max-height: 220px;
-      }
+    &__discription {
+      width: 48%;
+      margin-left: 2%;
+      margin-top: 0;
+      align-self: center;
+      line-height: 26px;
     }
   }
 }
