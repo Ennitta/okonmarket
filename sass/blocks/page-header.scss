@@ -1,4 +1,24 @@
 .page-header {
+  position: relative;
+
+  &__toggle-open {
+    position: absolute;
+    bottom: 75px;
+    right: 25px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 4px;
+      background-color: #8abe3b;
+      box-shadow: 0 8px 0 0 #8abe3b, 0 16px 0 0 #8abe3b;
+    }
+  }
+
   &__logo {
     width: 150px;
     margin: 20px auto;
@@ -14,8 +34,11 @@
 
 @media #{$tablet-width} {
   .page-header {
-    position: relative;
     @include container-fluid;
+
+    &__toggle-open {
+      display: none;
+    }
 
     &__logo {
       position: absolute;

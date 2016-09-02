@@ -1,5 +1,39 @@
   .main-nav {
-    @include list-clear;
+    display: none;
+    position: relative;
+
+    &__show {
+      display: block;
+    }
+
+    &__toggle-close {
+      position: absolute;
+      top: 10px;
+      right: 25px;
+      width: 27px;
+      height: 27px;
+      cursor: pointer;
+
+      &:before, &:after{
+        content: "";
+        position: absolute;
+        top: 11px;
+        right:0;
+        width: 27px;
+        height: 4px;
+        background-color: #fff;
+        transform: rotate(45deg);
+        z-index: 10;
+      }
+
+      &:after {
+        transform: rotate(-45deg);
+      }
+    }
+
+    &__list {
+      @include list-clear;
+    }
 
     &__item {
       font-size: 18px;
@@ -40,10 +74,18 @@
 
 @media #{$tablet-width} {
   .main-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 150px;
+    display: block;
+
+    &__toggle-close {
+      display: none;
+    }
+
+    &__list {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-top: 150px;
+    }
 
     &__item {
       width: 18%;

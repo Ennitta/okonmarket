@@ -8,16 +8,20 @@
   </head>
   <body>
     <header class="page-header">
-      <ul class="main-nav">
-        <li class="main-nav__item"><a href="catalog.html">Каталог</a></li>
-        <li class="main-nav__item"><a href="zakaz.html">Рассчитать заказ</a></li>
-        <li class="main-nav__item"><a href="contacts.html">Контакты</a></li>
-        <li class="main-nav__item main-nav__item--price">Скачать прайс</li>
-        <li class="main-nav__item main-nav__item--tel">Телефон 8 (4912) 512-619</li>
-        <li class="main-nav__item main-nav__item--search">
-          <input type="search" name="search" placeholder="Поиск">
-        </li>
-      </ul>
+      <nav class="main-nav">
+        <span class="main-nav__toggle-close"></span>
+        <ul class="main-nav__list">
+          <li class="main-nav__item"><a href="catalog.html">Каталог</a></li>
+          <li class="main-nav__item"><a href="zakaz.html">Рассчитать заказ</a></li>
+          <li class="main-nav__item"><a href="contacts.html">Контакты</a></li>
+          <li class="main-nav__item main-nav__item--price">Скачать прайс</li>
+          <li class="main-nav__item main-nav__item--tel">Телефон 8 (4912) 512-619</li>
+          <li class="main-nav__item main-nav__item--search">
+            <input type="search" name="search" placeholder="Поиск">
+          </li>
+        </ul>
+      </nav>
+      <span class="page-header__toggle-open"></span>
       <a href="index.html" class="page-header__logo">
         <picture>
           <img src="img/Logo-3.png" width="150" height="80" alt="Оконный Маркет">
@@ -61,5 +65,20 @@
         <div class="page-footer__copyright">Разработано 2016г.</div>
       </div>
     </footer>
+    <script>
+      var open = document.querySelector (".page-header__toggle-open");
+      var nav = document.querySelector (".main-nav");
+      var close = document.querySelector (".main-nav__toggle-close");
+      open.addEventListener ("click", function (event) {
+        event.preventDefault ();
+        nav.classList.add ("main-nav__show");
+        open.classList.remove ("page-header__toggle-open");
+      });
+      close.addEventListener ("click", function (event) {
+        event.preventDefault ();
+        nav.classList.remove ("main-nav__show");
+        open.classList.add ("page-header__toggle-open");
+      });
+    </script>
   </body>
 </html>
