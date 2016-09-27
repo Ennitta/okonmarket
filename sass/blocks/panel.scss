@@ -6,7 +6,7 @@
   text-align: center;
 
   &__wrapper {
-    margin-bottom: 15px;
+    margin-bottom: 40px;
   }
 
   &__images {
@@ -26,6 +26,7 @@
 
     &__wrapper {
       display: flex;
+      justify-content: space-between;
     }
 
     &__images {
@@ -33,10 +34,11 @@
     }
 
     &__discription {
-      width: 44%;
-      margin-left: 3%;
-      margin-right: 3%;
+      width: 45%;
+      margin-top: 0;
+      line-height: 30px;
       align-self: center;
+      text-align: center;
     }
   }
 }
@@ -44,15 +46,15 @@
   .panel {
 
     &__wrapper {
-      width: 73%;
+      justify-content: space-around;
     }
 
     &__images {
-      width: 41%;
+      width: 45%;
     }
 
     &__discription {
-      width: 53%;
+      width: 35%;
     }
   }
 }

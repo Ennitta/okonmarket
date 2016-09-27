@@ -3,13 +3,12 @@
   margin: 5px 20px;
 
   &__wrapper {
-    margin-bottom: 20px;
+    margin-bottom: 40px;
   }
 
   &__images {
 
     img {
-      min-height: 150px;
       @include block-img;
       @include border-radius;
     }
@@ -24,6 +23,7 @@
 
     &__wrapper {
       display: flex;
+      justify-content: space-between;
     }
 
     &__images {
@@ -31,14 +31,27 @@
     }
 
     &__discription {
-      width: 44%;
-      margin-left: 3%;
-      margin-right: 3%;
+      width: 45%;
+      margin-top: 0;
       align-self: center;
+      text-align: center;
+      line-height: 30px;
     }
   }
 }
 @media #{$desctop-width} {
   .sill {
+
+    &__wrapper {
+      justify-content: space-around;
+    }
+
+    &__images {
+      width: 45%;
+    }
+
+    &__discription {
+      width: 35%;
+    }
   }
 }
