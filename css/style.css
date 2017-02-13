@@ -437,6 +437,13 @@ body {
     margin-top: 30px;
     margin-bottom: 30px; } }
 
+.title {
+  color: #000;
+  transition-property: color;
+  transition-duration: 0.7s;
+  transition-timing-function: ease-in;
+  transition-delay: 0.3s; }
+
 .main-nav {
   display: none;
   position: relative; }
@@ -683,32 +690,57 @@ body {
     height: 119px; } }
 
 .sliders {
-  position: relative; }
-  .sliders input {
-    display: none; }
-  .sliders label {
-    position: absolute;
+  position: relative;
+  overflow: visible;
+  /*
+  input {
+    display: none;
+  }
+
+  label {
+    position:absolute;
     top: 43%;
     width: 26px;
     height: 31px;
-    background-color: rgba(165, 205, 73, 0.6); }
-  .sliders label:after {
+    background-color: rgba(165,205,73,0.6);
+  }
+
+  label:after {
     content: "";
     position: absolute;
     top: 4px;
     left: 7px;
     width: 10px;
-    height: 23px; }
-  .sliders label [for="btn-1"] {
-    left: 0; }
-  .sliders label[for="btn-1"]:after {
-    background: url(../img/slider-arrow-left.png) no-repeat center center; }
-  .sliders label[for="btn-2"] {
-    right: 0; }
-  .sliders label[for="btn-2"]:after {
-    background: url(../img/slider-arrow-right.png) no-repeat center center; }
+    height: 23px;
+  }
+
+  label [for="btn-1"] {
+    left: 0;
+  }
+
+  label[for="btn-1"]:after {
+    background: url(../img/slider-arrow-left.png) no-repeat center center;
+  }
+
+  label[for="btn-2"] {
+    right: 0;
+  }
+
+  label[for="btn-2"]:after {
+    background: url(../img/slider-arrow-right.png) no-repeat center center;
+  }*/ }
+  .sliders__mask {
+    overflow: hidden; }
   .sliders__images {
-    display: none; }
+    position: relative;
+    top: -855px; }
+    .sliders__images--one {
+      animation: cycle 10s linear infinite; }
+    .sliders__images--two {
+      animation: cycletwo 10s linear infinite; }
+  .sliders__images {
+    /*
+    display: none;*/ }
     .sliders__images img {
       width: 100%;
       height: auto;
@@ -730,6 +762,62 @@ body {
     left: 11px; }
   .sliders label[for="btn-2"]:after {
     left: 14px; } }
+
+@keyframes cycle {
+  0% {
+    top: 0px; }
+  10% {
+    top: 0px;
+    opacity: 1;
+    z-index: 0; }
+  20% {
+    top: 855px;
+    opacity: 0;
+    z-index: 0; }
+  30% {
+    top: -855px;
+    opacity: 0;
+    z-index: -1; }
+  50% {
+    top: -855px;
+    opacity: 0;
+    z-index: 0; }
+  80% {
+    top: -855px;
+    opacity: 0; }
+  100% {
+    top: 0px;
+    opacity: 1; } }
+
+@keyframes cycletwo {
+  0% {
+    top: -855px;
+    opacity: 0; }
+  16% {
+    top: -855px;
+    opacity: 0; }
+  20% {
+    top: 0px;
+    opacity: 1; }
+  24% {
+    top: 0px;
+    opacity: 1; }
+  36% {
+    top: 0px;
+    opacity: 1;
+    z-index: 0; }
+  40% {
+    top: 855px;
+    opacity: 0;
+    z-index: 0; }
+  41% {
+    top: -855px;
+    opacity: 0;
+    z-index: -1; }
+  100% {
+    top: -855px;
+    opacity: 0;
+    z-index: -1; } }
 
 .count {
   width: auto; }
