@@ -1,24 +1,6 @@
 .sliders {
   position: relative;
-  overflow: visible;
 
-  &__mask {
-    overflow: hidden;
-  }
-
-  &__images {
-    position: relative;
-    top: -855px;
-
-    &--one {
-      animation: cycle 10s linear infinite;
-    }
-
-    &--two {
-      animation: cycletwo 10s linear infinite;
-    }
-  }
-/*
   input {
     display: none;
   }
@@ -54,10 +36,10 @@
 
   label[for="btn-2"]:after {
     background: url(../img/slider-arrow-right.png) no-repeat center center;
-  }*/
+  }
 
-  &__images {/*
-    display: none;*/
+  &__images {
+    display: none;
 
     img {
       @include block-img;
@@ -93,24 +75,24 @@
     }
   }
 }
-
+/*
 @keyframes cycle {
    0%  { top: 0px; }
    10% { top: 0px; opacity:1; z-index:0; }
-   20% { top: 855px; opacity: 0; z-index: 0; }
-   30% { top: -855px; opacity: 0; z-index: -1; }
-   50% { top: -855px; opacity: 0; z-index: 0; }
-   80% { top: -855px; opacity: 0; }
+   20% { top: 500px; opacity: 0; z-index: 0; }
+   30% { top: -500px; opacity: 0; z-index: -1; }
+   50% { top: -500px; opacity: 0; z-index: 0; }
+   80% { top: -500px; opacity: 0; }
    100%{ top: 0px; opacity: 1; }
 }
 @keyframes cycletwo {
-  0%  { top: -855px; opacity: 0; }
-   16% { top: -855px; opacity: 0; }
-   20% { top: 0px; opacity: 1; }
+   0%  { top: -855px; opacity: 0; }
+   16% { top: -500px; opacity: 0; }
+   20% { top: -200px; opacity: 1; }
    24% { top: 0px; opacity: 1; }
    36% { top: 0px; opacity: 1; z-index: 0; }
-   40% { top: 855px; opacity: 0; z-index: 0; }
-   41% { top: -855px; opacity: 0; z-index: -1; }
-   100%{ top: -855px; opacity: 0; z-index: -1; }
-}
+   40% { top: 500px; opacity: 0; z-index: 0; }
+   41% { top: -500px; opacity: 0; z-index: -1; }
+   100%{ top: -500px; opacity: 0; z-index: -1; }
+}*/
 
