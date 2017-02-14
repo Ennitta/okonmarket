@@ -1,3 +1,135 @@
 .count {
   @include container-fluid;
+  margin-top: 30px;
+
+  fieldset {
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 2px solid #8abe3b;
+  }
+
+  legend {
+    font-size: 16px;
+    color: darkgreen;
+  }
+
+  &__item {
+    display: flex;
+  }
+
+  &__calculate {
+    width: 90%;
+  }
+
+  &__add {
+
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+
+    &:before, &:after {
+      content: "";
+      position: absolute;
+      right: 8px;
+      width: 4px;
+      height: 20px;
+      background-color: #71b02f;
+    }
+
+    &:after {
+      transform: rotate(90deg);
+    }
+  }
+
+  &__width, input {
+    width: 60%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: none;
+    border: 1px solid #d0d0d0;
+  }
+
+  &__total {
+    font-size: 16px;
+    color: darkgreen;
+    margin-bottom: 10px;
+    text-align: center;
+
+    span {
+      margin-right: 5px;
+    }
+  }
+
+  &__btn {
+    margin-left: 25%;
+    margin-bottom: 25px;
+    padding: 10px 15px;
+    font-size: 18px;
+    color: #ffffff;
+    border-radius: 5px;
+    border: none;
+    background-color: #8abe3b;
+  }
+
+  &__info {
+    display: none;
+  }
+}
+
+@media #{$tablet-width} {
+  .count {
+    margin-top: 30px;
+
+    &__list {
+      display: flex;
+    }
+
+    &__form {
+      width: 65%;
+      margin-right: 5%;
+    }
+
+    fieldset {
+      margin-bottom: 30px;
+    }
+
+    &__info {
+      display: block;
+      width: 35%;
+      height: 80%;
+      background-color: #ffffff;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    &__title {
+      color: #8abe3b;
+      margin: 5px;
+    }
+
+    &__total {
+      width: 60%;
+      text-align: left;
+    }
+
+    &__btn {
+      margin-left: 0;
+    }
+  }
+}
+
+@media #{$desctop-width} {
+  .count {
+    fieldset {
+
+    }
+
+    &__total {
+      width: 45%;
+    }
+  }
 }
