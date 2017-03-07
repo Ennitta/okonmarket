@@ -1205,6 +1205,8 @@ body {
     border-radius: 10px; }
   .materials__discription {
     margin-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
     text-align: center; }
 
 @media (min-width: 890px) {
