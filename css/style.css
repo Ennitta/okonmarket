@@ -796,6 +796,24 @@ body {
       background-color: #71b02f; }
     .count__add:after {
       transform: rotate(90deg); }
+  .count__del {
+    position: relative;
+    bottom: -140px;
+    right: 34px;
+    width: 50px;
+    height: 50px; }
+    .count__del:before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 50px;
+      height: 50px;
+      background: url(../img/delete.png) no-repeat center center;
+      background-size: 50px 50px;
+      z-index: 100;
+      transform: scale(0.5, 0.5);
+      cursor: pointer; }
   .count__width, .count input {
     width: 60%;
     padding: 5px;
@@ -1178,6 +1196,8 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between; }
+  .pena__item {
+    width: calc(100% / 3); }
   .pena__images img {
     width: 95%; } }
 
