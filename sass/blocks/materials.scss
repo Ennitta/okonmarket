@@ -22,6 +22,10 @@
     padding-right: 10px;
     text-align: center;
   }
+
+  &__size {
+    width: 100%;
+  }
 }
 @media #{$tablet-width} {
   .materials {
