@@ -1159,8 +1159,6 @@ body {
     display: flex; }
   .angle__images {
     width: 50%; }
-    .angle__images img {
-      max-height: 300px; }
   .angle__discription {
     width: 48%;
     margin-left: 2%;
