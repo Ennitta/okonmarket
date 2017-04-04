@@ -922,7 +922,13 @@ body {
 
 .sill {
   width: auto;
-  margin: 5px 20px; }
+  margin: 5px 20px;
+  /*
+  &__color {
+    width: 90%;
+    margin-top: 15px;
+    margin-left: 5%;
+  }*/ }
   @media (min-width: 890px) {
     .sill {
       width: 90%;
@@ -941,7 +947,8 @@ body {
     border: 2px solid #8abe3b;
     border-radius: 10px; }
   .sill__discription {
-    margin-top: 10px; }
+    margin-top: 10px;
+    text-align: center; }
 
 @media (min-width: 890px) {
   .sill__wrapper {
@@ -1155,12 +1162,15 @@ body {
     text-align: center; }
 
 @media (min-width: 890px) {
+  .angle__wrapper {
+    display: flex;
+    flex-wrap: wrap; }
   .angle__item {
-    display: flex; }
-  .angle__images {
-    width: 50%; }
+    width: calc(100% / 3); }
+  .angle__images img {
+    width: 95%;
+    margin: 0 auto; }
   .angle__discription {
-    width: 48%;
     margin-left: 2%;
     margin-top: 0;
     align-self: center;
@@ -1194,8 +1204,7 @@ body {
 @media (min-width: 890px) {
   .pena__wrapper {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; }
+    flex-wrap: wrap; }
   .pena__item {
     width: calc(100% / 3); }
   .pena__images img {

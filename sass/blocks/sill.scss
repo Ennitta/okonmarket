@@ -16,7 +16,14 @@
 
   &__discription {
     margin-top: 10px;
+    text-align: center;
   }
+/*
+  &__color {
+    width: 90%;
+    margin-top: 15px;
+    margin-left: 5%;
+  }*/
 }
 @media #{$tablet-width} {
   .sill {

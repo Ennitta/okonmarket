@@ -22,16 +22,24 @@
 @media #{$tablet-width} {
   .angle {
 
-    &__item {
+    &__wrapper {
       display: flex;
+      flex-wrap: wrap;
+    }
+
+    &__item {
+      width: calc(100% / 3);
     }
 
     &__images {
-      width: 50%;
+
+      img {
+        width: 95%;
+        margin: 0 auto;
+      }
     }
 
     &__discription {
-      width: 48%;
       margin-left: 2%;
       margin-top: 0;
       align-self: center;
