@@ -48,6 +48,27 @@
         <img src="img/map-mobile.jpg" width="320" height="280" alt="">
       </picture>
     </div>
+    <div class="feedback">
+      <form action="/echo" method="post" class="feedback__form">
+        <fieldset>
+          <legend class="feedback__title">Возникли вопросы? Свяжитесь с нами.</legend>
+          <div class="feedback__container">
+            <div class="feedback__login">
+              <label for="name">Как к вам обращаться: </label>
+              <input type="text" name="name" id="name" placeholder="Имя и фамилия">
+              <label for="tel">Как с вами связаться: </label>
+              <input type="tel" name="tel" id="tel" placeholder="Телефон">
+            </div>
+            <div class="feedback__text">
+              <div class="feedback__discription">Напишите нам:</div>
+              <label for="textarea"></label>
+              <textarea placeholder="Опишите вашу проблему"></textarea>
+            </div>
+          </div>
+          <button type="submit" class="feedback__btn">Отправить</button>
+        </fieldset>
+      </form>
+    </div>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
         <div class="page-footer__contacts">г. Рязань, проезд Шабулина, 6б</div>

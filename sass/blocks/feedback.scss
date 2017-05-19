@@ -1,0 +1,80 @@
+.feedback {
+  @include container-fluid;
+  margin: 0 20px;
+  margin-bottom: 20px;
+
+  fieldset {
+    padding: 15px 30px;
+    border-radius: 10px;
+    border: 2px solid #8abe3b;
+  }
+
+  &__title {
+    font-size: 22px;
+    color: darkgreen;
+  }
+
+  label {
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  input {
+    width: 95%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    outline: none;
+  }
+
+  &__discription {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  textarea {
+    width: 95%;
+    padding: 8px;
+    border-radius: 5px;
+    outline: none;
+  }
+
+  &__btn {
+    @include btn;
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+@media #{$tablet-width} {
+  .feedback {
+
+    &__container {
+      display: flex;
+    }
+
+    &__login {
+      width: 48%;
+      margin-right: 4%;
+    }
+
+    &__text {
+      width: 48%;
+    }
+
+    input {
+      padding: 12px;
+    }
+
+    textarea {
+      height: 65%;
+    }
+
+    &__btn {
+      width: 80%;
+      margin-left: 10%;
+    }
+  }
+}

@@ -1249,3 +1249,69 @@ body {
     width: 31%;
     margin: 0;
     margin-bottom: 30px; } }
+
+.feedback {
+  width: auto;
+  margin: 0 20px;
+  margin-bottom: 20px; }
+  @media (min-width: 890px) {
+    .feedback {
+      width: 90%;
+      max-width: 960px;
+      margin: 0 auto; } }
+  @media (min-width: 1200px) {
+    .feedback {
+      width: 90%;
+      max-width: 1200px; } }
+  .feedback fieldset {
+    padding: 15px 30px;
+    border-radius: 10px;
+    border: 2px solid #8abe3b; }
+  .feedback__title {
+    font-size: 22px;
+    color: darkgreen; }
+  .feedback label {
+    font-size: 16px;
+    font-weight: 700; }
+  .feedback input {
+    width: 95%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid grey;
+    outline: none; }
+  .feedback__discription {
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 700; }
+  .feedback textarea {
+    width: 95%;
+    padding: 8px;
+    border-radius: 5px;
+    outline: none; }
+  .feedback__btn {
+    padding: 10px 15px;
+    font-size: 18px;
+    color: #ffffff;
+    border-radius: 5px;
+    border: none;
+    background-color: #8abe3b;
+    width: 100%;
+    margin-top: 20px; }
+
+@media (min-width: 890px) {
+  .feedback__container {
+    display: flex; }
+  .feedback__login {
+    width: 48%;
+    margin-right: 4%; }
+  .feedback__text {
+    width: 48%; }
+  .feedback input {
+    padding: 12px; }
+  .feedback textarea {
+    height: 65%; }
+  .feedback__btn {
+    width: 80%;
+    margin-left: 10%; } }
