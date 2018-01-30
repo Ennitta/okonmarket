@@ -3,10 +3,10 @@
 
   &__toggle-open {
     position: absolute;
-    bottom: 75px;
-    right: 25px;
+    top: 0;
+    right: 5%;
     width: 30px;
-    height: 30px;
+    height: 20px;
     cursor: pointer;
 
     &:before {

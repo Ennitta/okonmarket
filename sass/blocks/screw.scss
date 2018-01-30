@@ -16,31 +16,32 @@
 
   &__discription {
     margin-top: 10px;
-    font-weight: 700;
     text-align: center;
   }
 }
 @media #{$tablet-width} {
   .screw {
 
+    &__wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+
     &__item {
-    display: flex;
+      width: 31%;
+      margin-bottom: 30px;
+
+      &--width {
+        width: 49%;
+      }
     }
 
     &__images {
-      width: 50%;
 
       img {
         max-height: 220px;
       }
-    }
-
-    &__discription {
-      width: 48%;
-      margin-left: 2%;
-      margin-top: 0;
-      align-self: center;
-      line-height: 26px;
     }
   }
 }
@@ -50,12 +51,8 @@
     &__images {
 
       img {
-        max-height: 260px;
+        max-height: 350px;
       }
-    }
-
-    &__discription {
-      line-height: 30px;
     }
   }
 }

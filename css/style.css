@@ -386,6 +386,7 @@ body {
   width: auto;
   margin: 5px 20px; }
   .main-content__title {
+    display: block;
     font-size: 25px;
     line-height: 35px;
     color: #8abe3b;
@@ -487,10 +488,10 @@ body {
   position: relative; }
   .page-header__toggle-open {
     position: absolute;
-    bottom: 75px;
-    right: 25px;
+    top: 0;
+    right: 5%;
     width: 30px;
-    height: 30px;
+    height: 20px;
     cursor: pointer; }
     .page-header__toggle-open:before {
       content: "";
@@ -733,7 +734,6 @@ body {
     border-radius: 10px; }
   .screw__discription {
     margin-top: 10px;
-    font-weight: 700;
     text-align: center; }
 
 .mesh {
@@ -1025,18 +1025,17 @@ body {
     width: 90%;
     max-width: 960px;
     margin: 0 auto; }
+  .screw__wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
   .screw__item{
-    display: flex; }
-  .screw__images{
-    width: 50%; }
+    width: 31%;
+    margin-bottom: 30px; }
+  .screw__item--width{
+    width: 49%; }
   .screw__images img{
     max-height: 220px; }
-  .screw__discription{
-    width: 48%;
-    margin-left: 2%;
-    margin-top: 0;
-    align-self: center;
-    line-height: 26px; }
   .mesh{
     width: 90%;
     max-width: 960px;
@@ -1204,9 +1203,7 @@ body {
     width: 90%;
     max-width: 1200px; }
   .screw__images img{
-    max-height: 260px; }
-  .screw__discription{
-    line-height: 30px; }
+    max-height: 350px; }
   .mesh{
     width: 90%;
     max-width: 1200px; }
